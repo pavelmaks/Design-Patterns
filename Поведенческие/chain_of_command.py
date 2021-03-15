@@ -80,6 +80,7 @@ class FailedDecodingLogger(Handler):
         return DecodingResult(is_encoded=False)
 
 if __name__ == '__main__':
+    
     print('Chain #1 example')
     utf_8_encoded = 'привет '.encode('utf-8')
     cp_1251_encoded = 'привет'.encode('cp1251')
@@ -91,6 +92,7 @@ if __name__ == '__main__':
     if result.is_encoded:
         print(f'Успешно декодировано, кодировка определена: {result.encoding}')
     print('='*100)
+
     print('Chain #2 example')
     utf_8 = Utf8Decoder()
     failed_logger = FailedDecodingLogger()
