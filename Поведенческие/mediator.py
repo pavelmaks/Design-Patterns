@@ -127,6 +127,8 @@ if __name__ == '__main__':
     programmer = Programmer()
     CRM(client, supporter, programmer)
 
+    print('='*130)
     client.report_issue('Ничего не работает', 'Сделайте хорошо')
-    print('='*50)
-    client.report_issue('Ничего не работает', 'Сделайте хорошо')
+    print('='*130)
+    client.report_issue('Ничего не работаетx2', 'Сделайте хорошоx2')
+    print('='*130)
